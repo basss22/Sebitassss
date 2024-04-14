@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://i.pinimg.com/564x/19/50/8b/19508b7e052fb3466a58ddcc8245cd56.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: #d4c710; 
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #166307; 
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            border-bottom: 5px solid #279910; 
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ddda20; 
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #ddd;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+        }
+        
+        .category {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 2rem;
+            background-color: rgba(33, 95, 25, 0.9); 
+            border-radius: 15px; 
+            box-shadow: 0 10px 20px rgba(21, 255, 0, 0.2); 
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+        }
+        .category {
+    transition: background-color 0.3s ease; 
+}
+
+.category:hover {
+    background-color: #1f7e12; 
+}
+
+.category:active {
+    animation: clickAnimation 0.5s ease forwards; 
+}
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(255, 238, 1, 0.3);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace; 
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        p {
+            font-family: 'Arial', sans-serif; 
+            font-size: 1rem;
+            color: #cfbd18; 
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Para la mujer que más extraño</h1>
+    </header>
+    <nav>
+        <a href="letter.html">Lo siento</a>
+        <a href="football.html">Feid</a>
+    </nav>
+    <div class="category">
+        <h1>Lo siento</h1>
+        <a href="letter.html"> 
+            <img src="https://i.pinimg.com/564x/6c/b4/33/6cb433d0018b9b092f7b7763ab3e98ba.jpg" alt="Música" width="300">
+            <p>Sé que nunca habrán cartas o palabras suficientes, pero al menos le dará a entender lo mucho que la extraño.</p>
+        </a> 
+    </div>
+    <div class="category">
+        <h1>Feid</h1>
+        <a href="football.html">
+        <img src="https://i.pinimg.com/564x/cc/90/fd/cc90fd7025e7d4a8ef03ebe3a3ac1f09.jpg" alt="Ferxxo" width="300">
+        <p>Con el paso del tiempo, me he dado cuenta de que hay más canciones que me recuerdan a usted.</p>
+    </a>
+    </div>
+</body>
+</html>
